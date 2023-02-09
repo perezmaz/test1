@@ -9,7 +9,7 @@
             tincidunt lobortis. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Lorem
             donec massa sapien faucibus et. Eget arcu dictum varius duis at.
         </p>
-        <cv-button kind="primary" class="self-align-center" @click="goTo">
+        <cv-button kind="primary" class="bds-self-align-center" @click="goTo">
             Continue
         </cv-button>
     </div>
@@ -20,7 +20,7 @@ export default {
     name: 'MainPage',
     methods: {
         goTo() {
-            this.$router.push('/dashboard/form')
+            this.$router.push('/form')
         }
     }
 }

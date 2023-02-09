@@ -1,11 +1,11 @@
-.container {
+.bds-container {
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: row;
 }
 
-.sidebar {
+.bds-sidebar {
     width: 200px;
     background-color: #FFFFFF;
     height: 100%;
@@ -25,7 +25,7 @@
     }
 }
 
-.content {
+.bds-content {
     width: 100%;
     padding: 20px;
     background-color: #EFEFEF;
@@ -37,10 +37,10 @@
     }
 }
 
-.self-align-center {
+.bds-self-align-center {
     align-self: center;
 }
 
-.mb-2 {
+.bds-mb-2 {
     margin-bottom: 20px;
 }
