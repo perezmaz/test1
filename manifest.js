@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const resourcesFolder = './dist';
-const baseURL = 'https://github.com/perezmaz/test1/tree/master/dist';
+const baseURL = 'https://raw.githubusercontent.com/perezmaz/test1/master/dist';
 const {
     name,
     description = '',
@@ -21,16 +21,16 @@ const manifest = {
 }
 
 
-const readFolder = (folderPath) => {
+const readFolder = (folderPath, nestedFolder) => {
     fs.readdirSync(folderPath).forEach(file => {
         if (!file.includes('.')) {
-            readFolder(`${folderPath}/${file}`);
+            readFolder(`${folderPath}/${file}`, `/${file}`);
         } else {
             if (path.extname(file) === '.js') {
                 manifest.resources.js = [
                     ...manifest.resources.js,
                     {
-                        url: `${baseURL}/${file}`,
+                        url: `${baseURL}${nestedFolder}/${file}`,
                     }
                 ];
             }
@@ -38,7 +38,7 @@ const readFolder = (folderPath) => {
                 manifest.resources.css = [
                     ...manifest.resources.css,
                     {
-                        url: `${baseURL}/${file}`,
+                        url: `${baseURL}${nestedFolder}/${file}`,
                     }
                 ];
             }
@@ -46,6 +46,7 @@ const readFolder = (folderPath) => {
     });
 }
 
-readFolder(resourcesFolder);
+readFolder(resourcesFolder, '');
 
-fs.writeFileSync(`${resourcesFolder}/manifest.json`, JSON.stringify(manifest));
+console.log(manifest.resources);
+//fs.writeFileSync(`${resourcesFolder}/manifest.json`, JSON.stringify(manifest));
