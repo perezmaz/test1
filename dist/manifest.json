@@ -1,1 +1,1 @@
-{"name":"app1","description":"","version":"0.1.0","type":"JS_SINGLE_PAGE","resources":{"js":[{"url":"https://github.com/perezmaz/test1/tree/master/dist/test1.js"}],"css":[{"url":"https://github.com/perezmaz/test1/tree/master/dist/app.css"}]}}
+{"name":"app1","description":"","version":"0.1.0","type":"JS_SINGLE_PAGE","resources":{"js":[{"url":"https://raw.githubusercontent.com/perezmaz/test1/master/dist/test1.js"}],"css":[{"url":"https://raw.githubusercontent.com/perezmaz/test1/master/dist/css/app.css"}]}}

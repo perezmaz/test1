@@ -48,5 +48,4 @@ const readFolder = (folderPath, nestedFolder) => {
 
 readFolder(resourcesFolder, '');
 
-console.log(manifest.resources);
-//fs.writeFileSync(`${resourcesFolder}/manifest.json`, JSON.stringify(manifest));
+fs.writeFileSync(`${resourcesFolder}/manifest.json`, JSON.stringify(manifest));
