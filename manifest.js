@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const resourcesFolder = './public/dist';
-const baseURL = 'http://basis.bas.localhost/dist';
+const resourcesFolder = './dist';
+const baseURL = 'https://github.com/perezmaz/test1/tree/master/dist';
 const {
     name,
     description = '',
