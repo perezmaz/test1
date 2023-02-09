@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const resourcesFolder = './dist';
-const baseURL = 'https://raw.githubusercontent.com/perezmaz/test1/master/dist';
+const baseURL = 'https://cdn.jsdelivr.net/gh/perezmaz/test1/dist';
 const {
     name,
     description = '',
