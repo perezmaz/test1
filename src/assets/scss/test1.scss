@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #FFFFFF;
+    height: 100%;
+
+    ul {
+        padding: 20px 0 0 20px;
+
+        li {
+            padding: 0 0 10px 0;
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: #171717;
+            }
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    padding: 20px;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+
+    h4, p {
+        margin-bottom: 20px;
+    }
+}
+
+.self-align-center {
+    align-self: center;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}

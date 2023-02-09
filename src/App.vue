@@ -1,14 +1,24 @@
 <template>
-  <div>
-    <RouterLink to="/app1">Home</RouterLink>
-    <RouterLink to="/app1/link2">Link</RouterLink>
-    <router-view></router-view>
+  <div class="container" id="app">
+    <section class="sidebar">
+      <ul>
+        <li>
+          <RouterLink to="/dashboard">Home</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/form">Example Form</RouterLink>
+        </li>
+      </ul>
+    </section>
+    <section class="content">
+      <router-view></router-view>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  async mounted() {}
+  async mounted() { }
 }
 </script>

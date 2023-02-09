@@ -1,21 +1,33 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import TestLink1 from '../components/TestLink1';
-import TestLink2 from '../components/TestLink2';
+import ExampleForm from '../views/ExampleForm';
+import MainPage from '../views/MainPage';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/app1',
-    name: 'Link1',
-    component: TestLink1,
+    path: '/',
+    redirect: {
+      name: 'dashboard',
+    },
   },
   {
-    path: '/app1/link2',
-    name: 'Link2',
-    component: TestLink2,
+    path: '/dashboard',
+    name: 'dashboard',
+    component: MainPage,
+    meta: {
+      title: 'Dashbarod'
+    },
+  },
+  {
+    path: '/form/:name?',
+    name: 'form',
+    component: ExampleForm,
+    meta: {
+      title: 'Form'
+    },
   },
 ];
 

@@ -1,0 +1,13 @@
+{
+    "name": "tms",
+    "description": "Transport management system",
+    "type": "JS_SINGLE_PAGE",
+    "version": "0.1.1",
+    "resources": {
+        "js": [
+            {
+                "url": "http://127.0.0.1:8000/js/test1/test1.js"
+            }
+        ]
+    }
+}
