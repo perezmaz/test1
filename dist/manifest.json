@@ -1,1 +1,0 @@
-{"name":"app1","description":"Test App","version":"0.1.3","type":"JS_SINGLE_PAGE","manifest":"https://cdn.jsdelivr.net/gh/perezmaz/test1@0.1.3/dist/manifest.json","resources":{"js":[{"url":"https://cdn.jsdelivr.net/gh/perezmaz/test1@0.1.3/dist/test1.js"}],"css":[{"url":"https://cdn.jsdelivr.net/gh/perezmaz/test1@0.1.3/dist/css/app.css"}]}}
