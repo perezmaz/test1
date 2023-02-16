@@ -17,6 +17,9 @@
             tincidunt lobortis. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Lorem
             donec massa sapien faucibus et. Eget arcu dictum varius duis at.
         </p>
+        <p>
+            This is an example
+        </p>
         <cv-button kind="primary" class="bds-self-align-center" @click="goTo">
             Continue
         </cv-button>
