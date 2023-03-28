@@ -1,6 +1,6 @@
 <template>
-  <div class="bds-container">
-    <section class="bds-sidebar">
+  <div class="bds-application">
+    <section id="bds-sidebar" class="bds-sidebar bds-sidebar-open">
       <ul>
         <li>
           <RouterLink to="/dashboard">Home</RouterLink>
@@ -10,10 +10,10 @@
         </li>
       </ul>
     </section>
-    <section class="bds-content">
+    <section id="bds-content" class="bds-content bds-content-full">
       <router-view></router-view>
     </section>
-  </div>
+</div>
 </template>
 
 <script>
